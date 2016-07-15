@@ -1,13 +1,10 @@
 # Laravel API for HAProxy
 
-Builded a API service for remote deployment on HAProxy server for Load Balancing (LB) server/VM.
+Built an API service for remote deployment on the HAProxy server for Load Balancing (LB) server/VM.
 
-## Documentation
+## Documentation ## Requirements
 
-### Requirements
-
-* Composer
-
+* Composer 
 
 ## Contributing
 
@@ -19,4 +16,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+The Laravel
