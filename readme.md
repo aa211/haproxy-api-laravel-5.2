@@ -4,9 +4,9 @@ Builded a API service for remote deployment on HAProxy server for Load Balancing
 
 ## Documentation
 
-        ## Requirements
+### Requirements
 
-                * Composer
+* Composer
 
 
 ## Contributing
