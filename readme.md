@@ -16,8 +16,8 @@
 
 ## 1st step download the system
 
-  mkdir -p /opt/LLB/ && cd /opt/LLB/
-  git clone https://github.com/aa211/haproxy-api-laravel-5.2
+    mkdir -p /opt/LLB/ && cd /opt/LLB/
+    git clone https://github.com/aa211/haproxy-api-laravel-5.2
 
 ## 2nd step 
 
@@ -25,13 +25,13 @@
 
   Install the laravel framework
   
-  php composer.phar update
+    php composer.phar update
 
 ## 3rd step
 
 Start the server with:
   
-  php artisan serve --host 0.0.0.0 --port 9000
+    php artisan serve --host 0.0.0.0 --port 9000
   
 ## 4th step
 
@@ -39,36 +39,55 @@ Install the HAProxy
 
 Coentos:
   
-  yum install haproxy
+    yum install haproxy
 
 Ubuntu:
 
-  apt-get install haproxy
+    apt-get install haproxy
   
 # Usage and examples
 
   Post values:
   
-  Config=<<Config To load (name ex: http, ftp, ETC) [Obligatory]>>
-  SecureName=<< Name for https [Obligatory for HTTPS] >>
-  Name=<< Name for the service [Obligatory] >>
+    Config=<<Config To load (name ex: http, ftp, ETC) [Obligatory]>>
+    
+    SecureName=<< Name for https [Obligatory for HTTPS] >>
+    
+    Name=<< Name for the service [Obligatory] >>
+  
   
   If need to 1 server in banckend:
-  IP= << ip address of server in backend [Obligatory] >>
-  Port= << port address of server in backend [Obligatory] >>
-  SecureIP= << ip address of server in backend for HTTPS [Obligatory for HTTPS] >>
-  SecurePort= << port address of server in backend for HTTPS [Obligatory for HTTPS]>>
+  
+    IP= << ip address of server in backend [Obligatory] >>
+    
+    Port= << port address of server in backend [Obligatory] >>
+    
+    SecureIP= << ip address of server in backend for HTTPS [Obligatory for HTTPS] >>
+    
+    SecurePort= << port address of server in backend for HTTPS [Obligatory for HTTPS]>>
+  
   
   Or multiple:
-  IP[]=<< ip address of server in backend [Obligatory] >>
-  Port[]=<< port address of server in backend [Obligatory] >>
-  IP[]=<< ip address of server in backend [Obligatory] >>
-  Port[]=<< port address of server in backend [Obligatory] >>
-  SecureIP[]=<< ip address of server in backend for HTTPS [Obligatory for HTTPS] >>
-  SecurePort[]=<< port address of server in backend for HTTPS [Obligatory for HTTPS] >>
-  SecureIP[]=<< ip address of server in backend for HTTPS [Obligatory for HTTPS] >>
-  SecurePort[]=<< port address of server in backend for HTTPS [Obligatory for HTTPS]>>
+  
+    IP[]=<< ip address of server in backend [Obligatory] >>
+    
+    Port[]=<< port address of server in backend [Obligatory] >>
+    
+    IP[]=<< ip address of server in backend [Obligatory] >>
+    
+    Port[]=<< port address of server in backend [Obligatory] >>
+    
+    SecureIP[]=<< ip address of server in backend for HTTPS [Obligatory for HTTPS] >>
+    
+    SecurePort[]=<< port address of server in backend for HTTPS [Obligatory for HTTPS] >>
+    
+    SecureIP[]=<< ip address of server in backend for HTTPS [Obligatory for HTTPS] >>
+    
+    SecurePort[]=<< port address of server in backend for HTTPS [Obligatory for HTTPS]>>
   
   
-  LocalPort=<< Port to be used for starting load balancing >>
-  LocalSecurePort=<< Port to be used for starting load balancing for HTTPS >>
+  
+    LocalPort=<< Port to be used for starting load balancing >>
+    
+    LocalSecurePort=<< Port to be used for starting load balancing for HTTPS >>
+  
