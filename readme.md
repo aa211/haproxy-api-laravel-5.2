@@ -47,7 +47,7 @@ Ubuntu:
   
 # Usage and examples
 
-  Post values:
+  Post values to http://<server-ip-address/sever-dns>/set/configuration:
   
     Config=<<Config To load (name ex: http, ftp, ETC) [Obligatory]>>
     
@@ -90,4 +90,23 @@ Ubuntu:
     LocalPort=<< Port to be used for starting load balancing >>
     
     LocalSecurePort=<< Port to be used for starting load balancing for HTTPS >>
-  
+    
+## Example 
+    
+       curl -X POST \
+        -F "Config=p" \
+        -F "SecureName=webs" \
+        -F "Name=web" \
+        -F "IP[]=127.0.0.1" \
+        -F "Port[]=8000" \
+        -F "IP[]=127.0.0.1" \
+        -F "Port[]=8001" \
+        -F "SecureIP[]=127.0.0.1" \
+        -F "SecurePort[]=1443" \
+        -F "SecureIP[]=127.0.0.1" \
+        -F "SecurePort[]=1444" \
+        -F "LocalPort=80" \
+        -F "LocalSecurePort=443 \
+        -F "LocalPort=80" \
+        -F "LocalSecurePort=443" \
+        http://10.0.0.53:3000/set/configuration 
