@@ -47,7 +47,7 @@ Ubuntu:
   
 # Usage and examples
 
-  Post values to http://<server-ip-address/sever-dns>/set/configuration:
+  Post values to ``http://<server-ip-address/sever-dns>/set/configuration``:
   
     Config=<<Config To load (name ex: http, ftp, ETC) [Obligatory]>>
     
