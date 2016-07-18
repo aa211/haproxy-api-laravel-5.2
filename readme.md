@@ -56,7 +56,7 @@ Ubuntu:
     Name=<< Name for the service [Obligatory] >>
   
   
-  If need to 1 server in banckend:
+  If needed a single server in backend:
   
     IP= << ip address of server in backend [Obligatory] >>
     
