@@ -37,7 +37,7 @@ Start the server with:
 
 Install the HAProxy
 
-Coentos:
+Centos:
   
     yum install haproxy
 
